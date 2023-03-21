@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color-one: #cda274;
+  --primary-color-two: #292f36;
+  --primary-color-three: #f4f0ec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Serif Display", serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  overflow: auto;
+}
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+.primary-logo {
+  width: 150px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li {
+  list-style: none;
+  margin: 0 20px;
+}
+.menu li a {
+  text-decoration: none;
+  color: var(--primary-color-two);
+  font-size: 20px;
+  font-family: serif;
+}
+.menu li a:hover {
+  color: var(--primary-color-one);
+}
+.menu li a.active {
+  color: var(--primary-color-one);
+}
+.menu li a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color-one);
+  margin-top: 5px;
+}
+.menu li a.active:hover::after {
+  background-color: var(--primary-color-one);
+}
+.menu li a.active:hover {
+  color: var(--primary-color-one);
+}
+.menu li a:hover::after {
+  background-color: var(--primary-color-one);
+}
+/* use background images in .hero-part*/
+.hero-part {
+  height: 100vh;
+  background-image: url(../images/hero-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-part h1 {
+  color: var(--primary-color-two);
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 100px;
+  margin-left: 150px;
+  background-color: transparent;
+}
+.hero-part p {
+  color: var(--primary-color-two);
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 150px;
+  background-color: transparent;
+}
+.hero-part button {
+  background-color: var(--primary-color-one);
+  color: var(--primary-color-three);
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-left: 150px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero-part button:hover {
+  background-color: var(--primary-color-two);
+  color: var(--primary-color-one);
+}
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+  padding-top: 100px;
+}
+.pad{
+    padding: 0 30px;
+}
+.overview p{
+    color: var(--primary-color-two);
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 20px;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.overview button{
+    background-color: var(--primary-color-one);
+    color: var(--primary-color-three);
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
